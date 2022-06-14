@@ -1,6 +1,4 @@
-
 package domainmodel;
-
 
 public class Employee {
 
@@ -24,12 +22,12 @@ public class Employee {
     }
 
     public Employee(int aInt, String string, String string0, int aInt0, String string1, String string2) {
-        this.pracId=aInt;
-        this.pracImie=string;
-         this.pracNazwisko=string0;
-         this.pracWiek=aInt0;
-         this.pracNrTelefonu=string1;
-         this.pracEmail=string2;
+        this.pracId = aInt;
+        this.pracImie = string;
+        this.pracNazwisko = string0;
+        this.pracWiek = aInt0;
+        this.pracNrTelefonu = string1;
+        this.pracEmail = string2;
     }
 
     public int getPracId() {

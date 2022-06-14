@@ -1,16 +1,16 @@
-
 package DAO;
 
 import domainmodel.Employee;
 import java.util.List;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
-
-public class EmployeeDAO implements IDao{
+public class EmployeeDAO implements IDao {
+    private DriverManagerDataSource dataSource;
 
     @Override
     public void setDataSource(DriverManagerDataSource ds) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        dataSource = ds;
+
     }
 
     @Override
@@ -37,5 +37,5 @@ public class EmployeeDAO implements IDao{
     public void update(int id, String imie, String nazw, int wiek, String nr_tel, String e_mail) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }
